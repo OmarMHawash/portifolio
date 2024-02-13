@@ -1,5 +1,5 @@
-import { ProjectType } from "../lib/types";
-import { Card, CardContent } from "./components/card";
+import { ProjectType } from "../../lib/types";
+import { Card, CardContent } from "../components/card";
 
 export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
   const { title, desc, img, github, video } = itemdata;

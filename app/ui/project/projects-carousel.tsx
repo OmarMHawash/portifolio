@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/app/ui/components/carousel";
 import ProjectItem from "./project-item";
-import { Projects } from "../lib/data";
+import { Projects } from "../../lib/data";
 
 export default function ProjectsCarousel() {
   return (
