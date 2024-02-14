@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-dvh bg-slate-800`}>
+      <body className={`${inter.className} h-dvh bg-slate-800 overflow-hidden`}>
         <Nav />
         {children}
       </body>

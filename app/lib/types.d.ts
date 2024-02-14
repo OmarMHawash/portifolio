@@ -10,4 +10,5 @@ export type ProjectType = {
   img: string;
   video: string;
   github: string;
+  link: string;
 };

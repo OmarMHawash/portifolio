@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function SocialItem(item: any) {
   return (
-    <Link
+    <a
       key={item.title}
       href={item.path}
       target="_blank"
@@ -12,14 +11,14 @@ export default function SocialItem(item: any) {
     >
       <div className="flex flex-row">
         <Image
-          className="m-2"
+          className="m-2 w-[16px] h-[16px]"
           src={item.img}
           alt={item.title}
-          width={32}
-          height={32}
+          width={16}
+          height={16}
         />
-        <p className="my-4 font-semibold text-sm pr-4">{item.title}</p>
+        <p className="my-2 font-semibold text-xs pr-2">{item.title}</p>
       </div>
-    </Link>
+    </a>
   );
 }
