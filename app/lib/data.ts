@@ -17,6 +17,14 @@ export const Projects: ProjectType[] = [
     video: "/videos/ecbuilder.mp4",
     link: "",
   },
+  {
+    title: "Auto-rello-it - Trello to CSV",
+    desc: "A script made with AutoIt to export Trello list to csv, it's a simple web app that uses trello GUI to get data from a list (including images), and export them data as csv file, and images directory.",
+    github: "https://github.com/OmarMHawash/auto-rello-it",
+    img: "/images/projects/auto-rello-it.webp",
+    video: "/videos/auto-rello-it.mp4",
+    link: "",
+  },
 ];
 
 export const navList: NavItemType[] = [
