@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { ProjectType } from "../../lib/types";
 import { Card, CardContent } from "../components/card";
+import ItemTag from "./item-tag";
 
 export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
-  const { title, desc, img, github, video, link } = itemdata;
+  const { title, desc, img, github, video, link, techs } = itemdata;
   return (
     <div className="p-1 m-4 md:m-0 text-slate-200">
       <h2 className="m-2 ml-0 font-bold text-xl">{title}</h2>
@@ -15,6 +16,11 @@ export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
           <video src={video} autoPlay muted poster={img} />
         </CardContent>
       </Card>
+      <div className="flex justify-start py-2">
+        {techs.map((tech, index) => (
+          <ItemTag key={index} title={tech.title} color={tech.color} />
+        ))}
+      </div>
       <div className="flex justify-between px-2">
         <a className="flex" target="_blank" href={github}>
           <Image

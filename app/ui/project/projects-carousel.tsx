@@ -13,7 +13,7 @@ export default function ProjectsCarousel() {
     <Carousel className="w-full md:w-10/12">
       <CarouselContent>
         {Projects.map((item, index) => (
-          <CarouselItem key={index}>
+          <CarouselItem key={item.updatedAT}>
             <ProjectItem itemdata={item} />
           </CarouselItem>
         ))}
