@@ -9,6 +9,14 @@ export const Projects: ProjectType[] = [
     video: "",
     link: "https://freepik-clone.vercel.app",
   },
+  {
+    title: "EcBulider - Landing Page Builder",
+    desc: "A landing page builder, build with laravel, and react with typescript. it offers a simple interface to choose components and colors for the page, and export it as a react project.",
+    github: "https://github.com/OmarMHawash/ecBuilder",
+    img: "/images/projects/ecbuilder.jpeg",
+    video: "/videos/ecbuilder.mp4",
+    link: "",
+  },
 ];
 
 export const navList: NavItemType[] = [

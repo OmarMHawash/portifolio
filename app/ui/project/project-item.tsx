@@ -26,10 +26,11 @@ export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
           />
           <span className="mt-3 ml-2 text-sm underline">github</span>
         </a>
-        <a className="my-3" target="_blank" href={link}>
-          🌐
-          <span className="ml-2 text-sm underline">demo</span>
-        </a>
+        {link && (
+          <a className="my-3" target="_blank" href={link}>
+            <span className="ml-2 text-sm underline">demo</span>
+          </a>
+        )}
       </div>
       <p>{desc}</p>
     </div>
