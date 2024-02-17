@@ -6,6 +6,7 @@ import {
 } from "@/app/ui/components/accordion";
 import { AllProjects } from "@/app/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AllProjectsComp() {
   return (
@@ -16,15 +17,21 @@ export default function AllProjectsComp() {
     >
       <AccordionItem value="item-1">
         <AccordionTrigger>All Projects:</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="mt-4">
           {AllProjects.map((item) => (
             <a key={item.title} href={item.github}>
-              <div
-                key={item.title}
-                className="mb-2 p-4 bg-slate-800 rounded-xl border-2"
-              >
-                <h2 className="pb-2">{item.title}</h2>
-                <p>{item.desc}</p>
+              <div className="flex mb-6 justify-start bg-slate-800 rounded-xl border-2">
+                <Image
+                  src={item.img}
+                  width={256}
+                  height={144}
+                  alt={item.title}
+                  className="rounded-xl p-3 w-[192px] md:w-[256px]"
+                />
+                <div key={item.title} className="mb-2 p-4">
+                  <h2 className="pb-2 text-xl font-bold">{item.title}</h2>
+                  <p className="text-base">{item.desc}</p>
+                </div>
               </div>
             </a>
           ))}

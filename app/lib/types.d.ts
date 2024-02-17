@@ -24,6 +24,7 @@ export type ProjectMiniType = {
   techs: techItemType[];
   type: "personal" | "work" | "school" | "OpenSource";
   rating: number;
+  img: string;
 };
 
 export type techItemType = {

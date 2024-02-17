@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Page() {
   return (
-    <main className=" overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div className="flex justify-center">
           <ProjectsCarousel />

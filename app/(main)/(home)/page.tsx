@@ -7,7 +7,7 @@ import Link from "next/link";
 import SocialItem from "@/app/ui/social-item";
 export default function Home() {
   return (
-    <main className="w-full h-5/6 overflow-hidden">
+    <main className="w-full h-[80vh] overflow-hidden">
       <motion.div
         className="h-full"
         initial={{ opacity: 0 }}
