@@ -20,17 +20,19 @@ export default function AllProjectsComp() {
         <AccordionContent className="mt-4">
           {AllProjects.map((item) => (
             <a key={item.title} href={item.github}>
-              <div className="flex mb-6 justify-start bg-slate-800 rounded-xl border-2">
+              <div className="flex mb-6 justify-start bg-slate-800 rounded-xl border-2 overflow-ellipsis overflow-hidden">
                 <Image
                   src={item.img}
                   width={256}
                   height={144}
                   alt={item.title}
-                  className="rounded-xl p-3 w-[192px] md:w-[256px]"
+                  className="rounded-xl p-3 w-[176px] md:w-[256px] max-h-[148px]"
                 />
                 <div key={item.title} className="mb-2 p-4">
-                  <h2 className="pb-2 text-xl font-bold">{item.title}</h2>
-                  <p className="text-base">{item.desc}</p>
+                  <h2 className="pb-2 text-xl font-bold line-clamp-1">
+                    {item.title}
+                  </h2>
+                  <p className="text-base line-clamp-3">{item.desc}</p>
                 </div>
               </div>
             </a>
