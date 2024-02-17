@@ -10,11 +10,15 @@ import { Projects } from "../../lib/data";
 
 export default function ProjectsCarousel() {
   return (
-    <Carousel className="w-full md:w-10/12">
+    <Carousel className="w-full md:w-8/12">
       <CarouselContent>
         {Projects.map((item, index) => (
           <CarouselItem key={item.updatedAT}>
-            <ProjectItem itemdata={item} />
+            <ProjectItem
+              itemdata={item}
+              index={index + 1}
+              size={Projects.length}
+            />
           </CarouselItem>
         ))}
       </CarouselContent>

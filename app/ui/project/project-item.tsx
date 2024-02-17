@@ -2,12 +2,26 @@ import Image from "next/image";
 import { ProjectType } from "../../lib/types";
 import { Card, CardContent } from "../components/card";
 import ItemTag from "./item-tag";
+import { Badge } from "../components/badge";
 
-export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
+export default function ProjectItem({
+  itemdata,
+  index,
+  size,
+}: {
+  itemdata: ProjectType;
+  index: number;
+  size: number;
+}) {
   const { title, desc, img, github, video, link, techs } = itemdata;
   return (
-    <div className="p-1 m-4 md:m-0 text-slate-200">
-      <h2 className="m-2 ml-0 font-bold text-xl">{title}</h2>
+    <div className="p-1 m-4 md:m-0 text-slate-200 ">
+      <div className="flex justify-between">
+        <h2 className="m-2 ml-0 font-bold text-xl">{title}</h2>
+        <p className="m-2 ml-0 text-lg">
+          {index}/{size}
+        </p>
+      </div>
       <Card className="border-none">
         <CardContent
           className="flex aspect-video items-center justify-center p-0 border-zinc
@@ -18,7 +32,14 @@ export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
       </Card>
       <div className="flex justify-start py-2">
         {techs.map((tech, index) => (
-          <ItemTag key={index} title={tech.title} color={tech.color} />
+          // <ItemTag key={index} title={tech.title} color={tech.color} />
+          <Badge
+            key={index}
+            className="mr-1"
+            style={{ backgroundColor: tech.color }}
+          >
+            {tech.title}
+          </Badge>
         ))}
       </div>
       <div className="flex justify-between px-2">
