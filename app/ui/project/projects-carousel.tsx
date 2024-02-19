@@ -10,8 +10,8 @@ import { Projects } from "../../lib/data";
 
 export default function ProjectsCarousel() {
   return (
-    <Carousel className="w-full md:w-8/12">
-      <h1 className="pl-5 mt-4 text-2xl font-semibold text-slate-50">
+    <Carousel className="w-full md:w-7/12">
+      <h1 className="pl-5 md:pl-0 mt-4 text-2xl font-semibold text-slate-50">
         Featured Projects
       </h1>
       <CarouselContent>

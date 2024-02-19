@@ -14,16 +14,16 @@ export default function Home() {
         animate={{ opacity: 1 }}
       >
         <div className="w-full h-full flex justify-center">
-          <div className="w-full flex flex-col h-full justify-around">
+          <div className="w-11/12 md:w-8/12 flex flex-col h-full justify-around">
             <div className="text-center">
-              <h1 className="font-bold text-3xl md:text-5xl text-slate-50">
+              <h1 className="font-bold text-3xl md:text-5xl text-zinc-50">
                 Omar Hawash
               </h1>
-              <p className="w-full md:text-xl p-4 text-slate-100">
+              <p className="w-full md:text-xl p-4 text-zinc-50">
                 Full Stack Developer, Designer, and Creator. I build things for
                 the Internet people to make life better.
               </p>
-              <div className="grid grid-flow-row grid-cols-3 gap-1 sm:flex sm:flex-row md:justify-center">
+              <div className="grid grid-flow-row grid-cols-3 gap-0.5 sm:flex sm:flex-row md:justify-center">
                 {socials.map((item) => {
                   return (
                     <React.Fragment key={item.title}>
