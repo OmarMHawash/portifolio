@@ -13,14 +13,12 @@ export default function AllProjectsComp() {
     return b.rating - a.rating;
   });
   return (
-    <Accordion
-      className="m-4 md:m-0 w-full md:w-7/12 pt-8 pb-24"
-      type="single"
-      collapsible
-    >
+    <Accordion className="m-4 md:m-0 w-full md:w-7/12 pt-8 pb-24" type="single">
       <AccordionItem value="item-1">
-        <AccordionTrigger className="ml-1 text-2xl">
-          All Projects:
+        <AccordionTrigger className="ml-1 text-2xl font-semibold">
+          <p className="underline-none">
+            <span className="grayscale">⭐ </span>More Projects
+          </p>
         </AccordionTrigger>
         <AccordionContent className="mt-4">
           {sortedProjects.map((item) => (
@@ -33,7 +31,7 @@ export default function AllProjectsComp() {
                 width={300}
                 height={300}
                 alt={item.title}
-                className="bg-white rounded-2xl p-3 m-3 w-[110px] max-h-[110px] object-contain"
+                className="bg-white rounded-2xl p-3 m-3 w-[110px] min-w-[110px] max-h-[110px] object-contain"
               />
               <div className="relative py-4 pl-2 pb-1 w-full">
                 <h2 className="pb-2 text-xl font-bold line-clamp-1">

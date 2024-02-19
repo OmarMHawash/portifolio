@@ -14,7 +14,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
       >
         <div className="w-full h-full flex justify-center">
-          <div className="w-11/12 md:w-8/12 flex flex-col h-full justify-around">
+          <div className="w-11/12 lg:w-8/12 flex flex-col h-full justify-around">
             <div className="text-center">
               <h1 className="font-bold text-3xl md:text-5xl text-zinc-50">
                 Omar Hawash

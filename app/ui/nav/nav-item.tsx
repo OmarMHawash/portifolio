@@ -13,7 +13,7 @@ export default function NavItem({ navdata }: { navdata: NavItemType }) {
         <h2
           className={`w-full text-center font-medium text-slate-100 
         px-2 py-3 rounded-lg ${
-          path === pathname ? "bg-slate-900" : ""
+          path === pathname ? "underline underline-offset-2" : ""
         } transform transition`}
         >
           {title}

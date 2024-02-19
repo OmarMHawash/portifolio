@@ -7,7 +7,7 @@ export default function SocialItem(item: any) {
       href={item.path}
       target="_blank"
       rel="noreferrer"
-      className="bg-zinc-950 rounded-lg m-2 text-zinc-50"
+      className="bg-zinc-700 rounded-lg m-2 text-zinc-50"
     >
       <div className="flex flex-row">
         <Image

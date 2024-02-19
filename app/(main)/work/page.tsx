@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <div>
-      <p>Work</p>
+      <p>coming...</p>
     </div>
   );
 }

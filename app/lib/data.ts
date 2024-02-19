@@ -125,7 +125,7 @@ export const AllProjects: ProjectMiniType[] = [
     img: "/images/projects/reactweather.png",
     techs: [
       { title: "React", color: "blue" },
-      { title: "OpenWeather", color: "yellowgreen" },
+      { title: "WeatherAPI", color: "yellowgreen" },
     ],
   },
   {

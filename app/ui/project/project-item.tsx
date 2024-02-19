@@ -25,20 +25,16 @@ export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
         )}
         <a className="flex" target="_blank" href={github}>
           <p className="mt-3 mr-1 text-base flex underline">
-            <Image
-              className="invert m-1 w-[14px] h-[14px]"
-              src="/images/socials/github.png"
-              alt="github"
-              width={20}
-              height={20}
-            />
-            <span className="text-sm">Github</span>
+            <span className="text-sm">Github ↗</span>
           </p>
         </a>
       </div>
       <div className="">
         <div className="flex justify-start py-2">
-          <Badge className="pl-0" style={{ backgroundColor: "transparent" }}>
+          <Badge
+            className="pl-0 text-sm"
+            style={{ backgroundColor: "transparent" }}
+          >
             Stack:{" "}
           </Badge>
           {techs.map((tech, index) => (
