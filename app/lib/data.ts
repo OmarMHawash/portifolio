@@ -10,7 +10,6 @@ export const Projects: ProjectType[] = [
     link: "https://freepik-clone.vercel.app",
     techs: [
       { title: "React", color: "blue" },
-      { title: "Selenium", color: "green" },
     ],
     updatedAT: 163000023412,
     rating: 10,
