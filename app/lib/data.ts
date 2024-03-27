@@ -3,14 +3,12 @@ import { NavItemType, ProjectMiniType, ProjectType } from "./types";
 export const Projects: ProjectType[] = [
   {
     title: "Freepik Clone",
-    desc: "A clone of the freepik website, build with react, bootstrap. It's a Fully responsive website, 8 different pages, featuring a complex seach page with filters, and a detailed page for each item. Also used selenium to scrape some data for testing.",
+    desc: "My largest project contribution yet: a ReactJS Front-end website inspired by Freepik’s website. This project initially started as a school assignment, but me and Yousef Khodrojy, we decided to take on a new branch and revamp the codebase. We improved project conventions, standardizing code formatting, and implementing linting specifically for React. Also introduced Layouts and ContextAPI, which allowed us to make component dynamic. The project has 8+ pages and over 34 different components, all responsive.",
     github: "https://github.com/Yousef-Salah/freepik-clone",
     img: "/images/projects/seepick.webp",
-    video: "",
+    video: "/videos/seepick.mp4",
     link: "https://freepik-clone.vercel.app",
-    techs: [
-      { title: "React", color: "blue" },
-    ],
+    techs: [{ title: "React", color: "blue" }],
     updatedAT: 163000023412,
     rating: 10,
     type: "school",
