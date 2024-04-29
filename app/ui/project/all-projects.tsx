@@ -34,7 +34,7 @@ export default function AllProjectsComp() {
                 className="bg-white rounded-2xl p-3 m-3 w-[110px] min-w-[110px] max-h-[110px] object-contain"
               />
               <div className="relative py-4 pl-2 pb-1 w-full">
-                <h2 className="pb-2 text-xl font-bold line-clamp-1">
+                <h2 className="pb-2 text-lg font-bold line-clamp-1">
                   {item.title}
                 </h2>
                 <p className="text-base line-clamp-2 max-w-[94%]">
