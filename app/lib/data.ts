@@ -123,6 +123,18 @@ export const AllProjects: ProjectMiniType[] = [
     ],
   },
   {
+    title: "Car Prediction",
+    desc: "Applied feature engineering ML Models on cars dealership dataset",
+    github: "https://github.com/OmarMHawash/car_prediction",
+    type: "personal",
+    rating: 7.2,
+    img: "https://www.shutterstock.com/image-vector/artificial-intelligence-circuit-line-style-260nw-2316452929.jpg",
+    techs: [
+      { title: "ML", color: "darkgreen" },
+      { title: "Sk-learn", color: "darkyellow" },
+    ],
+  },
+  {
     title: "Anime Euphoria",
     desc: "WebApp that helps you discover Anime and discuss it with other users",
     github: "https://github.com/OmarMHawash/anime_euphoria",
@@ -134,6 +146,7 @@ export const AllProjects: ProjectMiniType[] = [
       { title: "Nosql", color: "midnightblue" },
     ],
   },
+
   {
     title: "Learngrow",
     desc: "Boilerblate for learning courses discovery and admin built with Firebase",
