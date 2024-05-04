@@ -57,11 +57,11 @@ export const navList: NavItemType[] = [
     path: "/projects",
     desc: "a teny tiny description for you!",
   },
-  // {
-  //   title: "Work",
-  //   path: "/work",
-  //   desc: "a teny tiny description for you!",
-  // },
+  {
+    title: "Work",
+    path: "/work",
+    desc: "a teny tiny description for you!",
+  },
 ];
 
 export const AllProjects: ProjectMiniType[] = [
@@ -202,5 +202,20 @@ export const socials = [
     title: "Medium",
     path: "https://www.medium.com/@omarmhawash",
     img: "/images/socials/medium.png",
+  },
+];
+
+export const works = [
+  {
+    title: "Lavender Care",
+    desc: "Products Documentation website, built Astro",
+    link: "https://lavender-care.vercel.app",
+    date: "Sep 2023",
+  },
+  {
+    title: "Sport House",
+    desc: "Enhanced E-commerce website, Developed Front-end User Interface",
+    link: "https://sporthouse98.com",
+    date: "Feb 2023",
   },
 ];
