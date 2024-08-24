@@ -196,16 +196,16 @@ export const socials = [
     path: "https://www.linkedin.com/in/omar-m-hawash-59545420a",
     img: "/images/socials/linkedin.png",
   },
-  {
-    title: "LeetCode",
-    path: "https://www.leetcode.com/omarmhawash",
-    img: "/images/socials/leetcode.webp",
-  },
-  {
-    title: "HackerRank",
-    path: "https://www.hackerrank.com/omarmhawash",
-    img: "/images/socials/hackerrank.png",
-  },
+  // {
+  //   title: "LeetCode",
+  //   path: "https://www.leetcode.com/omarmhawash",
+  //   img: "/images/socials/leetcode.webp",
+  // },
+  // {
+  //   title: "HackerRank",
+  //   path: "https://www.hackerrank.com/omarmhawash",
+  //   img: "/images/socials/hackerrank.png",
+  // },
   {
     title: "CodePen",
     path: "https://codepen.io/omarmhawash",
