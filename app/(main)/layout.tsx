@@ -20,9 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-900`}>
-        <Nav />
-        {children}
+      <body
+        className={`${inter.className} bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900`}
+      >
+        <div className="min-h-screen bg-[url('/noise.png')] bg-repeat">
+          <Nav />
+          {children}
+        </div>
       </body>
     </html>
   );

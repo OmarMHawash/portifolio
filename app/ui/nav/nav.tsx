@@ -4,14 +4,19 @@ import NavItem from "./nav-item";
 
 export default function Nav() {
   return (
-    <div className="w-full h-1/12 flex justify-center p-4">
-      {navList.map((item) => {
-        return (
-          <React.Fragment key={item.title}>
-            <NavItem navdata={item} />
-          </React.Fragment>
-        );
-      })}
-    </div>
+    <header className="w-full py-6 px-4 backdrop-blur-sm">
+      <nav className="max-w-5xl mx-auto">
+        <ul className="flex flex-wrap justify-center gap-4 md:gap-8">
+          {navList.map((item) => (
+            <li
+              key={item.title}
+              className="transition-transform hover:scale-105"
+            >
+              <NavItem navdata={item} />
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 }
