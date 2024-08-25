@@ -1,5 +1,4 @@
 "use client";
-import { AllProjects } from "@/app/lib/data";
 import AllProjectsComp from "@/app/ui/project/all-projects";
 import ProjectsCarousel from "@/app/ui/project/projects-carousel";
 import { motion } from "framer-motion";

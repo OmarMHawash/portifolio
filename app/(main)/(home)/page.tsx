@@ -14,7 +14,7 @@ export default function Home() {
         className="space-y-20 pb-20 relative"
       >
         {/* Hero Section */}
-        <section className="h-[70vh] small:h-[85vh] flex flex-col justify-center items-center relative">
+        <section className="h-[70vh] small:h-[90vh] flex flex-col justify-center items-center relative">
           <div className="w-11/12 lg:w-8/12 text-center">
             <h1 className="font-bold text-3xl md:text-5xl text-zinc-50 mb-4">
               Omar Hawash

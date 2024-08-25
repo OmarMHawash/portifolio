@@ -70,7 +70,7 @@ export default function ProjectItem({ itemdata }: { itemdata: ProjectType }) {
           {techs.map((tech, index) => (
             <Badge
               key={index}
-              className="mr-2 mb-2 px-3 py-1 text-sm font-medium"
+              className="mr-1 mb-1 px-2 py-0.5 text-xs font-medium"
               style={{ backgroundColor: tech.color }}
             >
               {tech.title}

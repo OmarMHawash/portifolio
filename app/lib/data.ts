@@ -23,7 +23,7 @@ export const Projects: ProjectType[] = [
     techs: [
       { title: "Laravel", color: "red" },
       { title: "ReactTS", color: "darkblue" },
-      { title: "MySql", color: "orange" },
+      { title: "MySQL", color: "orange" },
     ],
     updatedAT: 1630012000000,
     rating: 8,
@@ -87,6 +87,18 @@ export const AllProjects: ProjectMiniType[] = [
     ],
   },
   {
+    title: "Open QA System",
+    desc: "Open Question Answering System using BERT and Elastic Search",
+    github: "https://github.com/OmarMHawash/open-qa-demo",
+    type: "school",
+    rating: 8.7,
+    img: "https://media.licdn.com/dms/image/D4D12AQFYOH9MQ1gWtA/article-cover_image-shrink_600_2000/0/1698476981389?e=2147483647&v=beta&t=arTUCTIfGLMh6sl8Gf173VbKO3-8YXmFlaU-FgxoORU",
+    techs: [
+      { title: "Transformers", color: "green" },
+      { title: "ESearch", color: "red" },
+    ],
+  },
+  {
     title: "Text Classification",
     desc: "Using different scikit-learn models for text classification",
     github: "https://github.com/OmarMHawash/Advanced_Text_Classification",
@@ -119,7 +131,7 @@ export const AllProjects: ProjectMiniType[] = [
     img: "/images/projects/holyland.png",
     techs: [
       { title: "Springboot", color: "green" },
-      { title: "Mysql", color: "blue" },
+      { title: "MySQL", color: "blue" },
     ],
   },
   {
@@ -143,7 +155,7 @@ export const AllProjects: ProjectMiniType[] = [
     img: "/images/projects/anime_euphoria.png",
     techs: [
       { title: "Django", color: "darkgreen" },
-      { title: "Nosql", color: "midnightblue" },
+      { title: "NoSQL", color: "midnightblue" },
     ],
   },
 
@@ -171,18 +183,6 @@ export const AllProjects: ProjectMiniType[] = [
       { title: "NodeJS", color: "seagreen" },
     ],
   },
-  // {
-  //   title: "React Weather",
-  //   desc: "Using OpenWeather API to view weather based on city",
-  //   github: "https://github.com/OmarMHawash/ReactWeather",
-  //   type: "school",
-  //   rating: 5,
-  //   img: "/images/projects/reactweather.png",
-  //   techs: [
-  //     { title: "React", color: "blue" },
-  //     { title: "WeatherAPI", color: "yellowgreen" },
-  //   ],
-  // },
 ];
 
 export const socials = [
@@ -221,14 +221,20 @@ export const socials = [
 export const works = [
   {
     title: "Lavender Care",
-    desc: "Products Documentation website, built Astro",
+    desc: "Products Documentation website, built with Astro.js",
     link: "https://lavender-care.vercel.app",
-    date: "Sep 2023",
+    date: "Mar 2023",
+  },
+  {
+    title: "My Portfolio",
+    desc: "My personal portfolio, built with Next.js",
+    link: "https://omh.569939477.xyz",
+    date: "Feb 2024",
   },
   {
     title: "Sport House",
-    desc: "Enhanced E-commerce website, Developed Front-end User Interface",
-    link: "https://sporthouse98.com",
-    date: "Feb 2023",
+    desc: "e-commerce platform using Medusa.js, focusing on UI and user-friendly admin tools",
+    link: "https://sporthouse.co",
+    date: "Aug 2024",
   },
 ];
