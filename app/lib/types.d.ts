@@ -11,7 +11,7 @@ export type ProjectType = {
   video: string;
   github: string;
   link: string;
-  updatedAT: number; // used as key for updating static data
+  updatedAT: number;
   techs: techItemType[];
   type: "personal" | "work" | "school" | "OpenSource";
   rating: number;
@@ -25,6 +25,8 @@ export type ProjectMiniType = {
   type: "personal" | "work" | "school" | "OpenSource";
   rating: number;
   img: string;
+  video?: string;
+  link?: string;
 };
 
 export type techItemType = {

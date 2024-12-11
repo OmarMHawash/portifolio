@@ -66,6 +66,46 @@ export const navList: NavItemType[] = [
 
 export const AllProjects: ProjectMiniType[] = [
   {
+    title: "Freepik Clone",
+    desc: "My largest project contribution yet: a ReactJS Front-end website inspired by Freepik’s website. This project initially started as a school assignment, but me and Yousef Khodrojy, we decided to take on a new branch and revamp the codebase. We improved project conventions, standardizing code formatting, and implementing linting specifically for React. Also introduced Layouts and ContextAPI, which allowed us to make component dynamic. The project has 8+ pages and over 34 different components, all responsive.",
+    github: "https://github.com/Yousef-Salah/freepik-clone",
+    img: "/images/projects/seepick.webp",
+    video: "/videos/seepick.mp4",
+    link: "https://freepik-clone.vercel.app",
+    techs: [{ title: "React", color: "blue" }],
+    rating: 10,
+    type: "school",
+  },
+  {
+    title: "Landing Page Builder",
+    desc: "A landing page builder, build with laravel, and react (with typescript). it offers a simple interface to choose components and colors for the page, and export it as a react project.",
+    github: "https://github.com/OmarMHawash/ecBuilder",
+    img: "https://github.com/OmarMHawash/ecBuilder/raw/main/docs/logo.png",
+    video: "/videos/ecbuilder.mp4",
+    link: "",
+    techs: [
+      { title: "Laravel", color: "red" },
+      { title: "ReactTS", color: "darkblue" },
+      { title: "MySQL", color: "orange" },
+    ],
+    rating: 9.9,
+    type: "personal",
+  },
+  {
+    title: "Trello CSV Exporter",
+    desc: "A script made with AutoIt to export Trello list to csv, it's a simple script that uses trello GUI to get data from a list (including images), and export them data as csv file, and images directory.",
+    github: "https://github.com/OmarMHawash/auto-rello-it",
+    img: "https://www.autoitscript.com/images/logo_autoit_210x72.svg",
+    video: "/videos/auto-rello-it.mp4",
+    link: "",
+    techs: [
+      { title: "AutoIt", color: "mediumslateblue" },
+      { title: "Trello", color: "blueviolet" },
+    ],
+    rating: 9,
+    type: "personal",
+  },
+  {
     title: "MedusaJS",
     desc: "Contributing to Medusajs: Building blocks for digital commerce",
     github: "https://github.com/medusajs/medusa",
@@ -225,12 +265,12 @@ export const works = [
     link: "https://lavender-care.vercel.app",
     date: "Mar 2023",
   },
-  {
-    title: "My Portfolio",
-    desc: "My personal portfolio, built with Next.js",
-    link: "https://omh.569939477.xyz",
-    date: "Feb 2024",
-  },
+  // {
+  //   title: "My Portfolio",
+  //   desc: "My personal portfolio, built with Next.js",
+  //   link: "https://omh.569939477.xyz",
+  //   date: "Feb 2024",
+  // },
   {
     title: "Sport House",
     desc: "e-commerce platform using Medusa.js, focusing on UI and user-friendly admin tools",

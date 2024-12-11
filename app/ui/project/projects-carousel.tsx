@@ -9,6 +9,10 @@ import ProjectItem from "./project-item";
 import { Projects } from "../../lib/data";
 
 export default function ProjectsCarousel() {
+  if (true) {
+    return null;
+  }
+
   return (
     <Carousel className="w-full md:w-7/12">
       <h1 className="pl-5 md:pl-0 mt-4 text-2xl font-semibold text-slate-50">

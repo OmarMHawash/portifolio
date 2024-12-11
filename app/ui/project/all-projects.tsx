@@ -13,14 +13,14 @@ export default function AllProjectsComp() {
     return b.rating - a.rating;
   });
   return (
-    <Accordion className="m-4 md:m-0 w-full md:w-7/12 pt-8 pb-24" type="single">
-      <AccordionItem value="item-1">
-        <AccordionTrigger className="ml-1 text-2xl font-semibold">
+    <div className="m-4 md:m-0 w-full md:w-7/12 pt-8 pb-24">
+      <div>
+        <div className="ml-1 text-2xl font-semibold">
           <p className="underline-none">
             <span className="grayscale">⭐ </span>More Projects
           </p>
-        </AccordionTrigger>
-        <AccordionContent className="mt-4">
+        </div>
+        <div className="mt-4">
           {sortedProjects.map((item) => (
             <div
               key={item.title}
@@ -79,11 +79,34 @@ export default function AllProjectsComp() {
                     />
                   </svg>
                 </a>
+                {item.video && (
+                  <a
+                    target="_blank"
+                    href={`https://omarmh.vercel.app${item.video}`}
+                    className="inline-flex items-center text-xs text-blue-300 hover:text-blue-200 transition-colors duration-200 ml-2"
+                  >
+                    Video
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                )}
               </div>
             </div>
           ))}
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+        </div>
+      </div>
+    </div>
   );
 }
