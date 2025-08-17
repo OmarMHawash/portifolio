@@ -106,15 +106,6 @@ export const AllProjects: ProjectMiniType[] = [
     type: "personal",
   },
   {
-    title: "MedusaJS",
-    desc: "Contributing to Medusajs: Building blocks for digital commerce",
-    github: "https://github.com/medusajs/medusa",
-    type: "OpenSource",
-    rating: 9,
-    img: "/images/projects/medusajs.png",
-    techs: [{ title: "OpenSource", color: "black" }],
-  },
-  {
     title: "Realtime Data Streaming",
     desc: "Spark Streaming consumer with kafka broker producing from tweets. Datalogging using flask",
     github: "https://github.com/OmarMHawash/Realtime_Data_Streaming",
@@ -198,7 +189,6 @@ export const AllProjects: ProjectMiniType[] = [
       { title: "NoSQL", color: "midnightblue" },
     ],
   },
-
   {
     title: "Learngrow",
     desc: "Boilerblate for learning courses discovery and admin built with Firebase",
@@ -233,7 +223,7 @@ export const socials = [
   },
   {
     title: "LinkedIn",
-    path: "https://www.linkedin.com/in/omar-m-hawash-59545420a",
+    path: "https://www.linkedin.com/in/omarmhawash",
     img: "/images/socials/linkedin.png",
   },
   // {
@@ -260,6 +250,12 @@ export const socials = [
 
 export const works = [
   {
+    title: "Sport House",
+    desc: "e-commerce platform using Medusa.js, focusing on UI and user-friendly admin tools",
+    link: "https://st11.sporthouse.app",
+    date: "Aug 2024",
+  },
+  {
     title: "Lavender Care",
     desc: "Products Documentation website, built with Astro.js",
     link: "https://lavender-care.vercel.app",
@@ -271,10 +267,5 @@ export const works = [
   //   link: "https://omh.569939477.xyz",
   //   date: "Feb 2024",
   // },
-  {
-    title: "Sport House",
-    desc: "e-commerce platform using Medusa.js, focusing on UI and user-friendly admin tools",
-    link: "https://sporthouse.co",
-    date: "Aug 2024",
-  },
+
 ];
